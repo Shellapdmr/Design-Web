@@ -1,0 +1,392 @@
+:root{
+    --blue:#F2F7FF;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* ------------Sampul Landing page------------ */
+
+section{
+    padding: 2rem 9%;
+}
+
+/*.Home {
+    background-position: left;
+}*/
+
+/* ------------------------ */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* ------------LOGO------------ */
+
+header .logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: #FDBE34;
+}
+
+/* -----------NAVBAR------------ */
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #000000;
+}
+
+header .navbar a:hover{
+    color: #FDBE34;
+}
+
+/* ------------ICONS------------ */
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #000000;
+    margin-left: 1.5rem;
+}
+
+header .icons i:hover{
+    color: #FDBE34;
+}
+
+/* -------------ICONS------------ */
+
+header #toggler{
+    display: none;
+}
+
+/*  LIST (responsive) */
+header .bi-list{
+    font-size: 3rem;
+    color: #000000;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* -------------HALAMAN HOME------------ */
+
+.Home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F2F7FF;
+    /*background: url() no-repeat;*/
+    background-size: cover;
+    background-position: center;
+}
+
+.Home .content{
+    max-width: 50rem;
+    text-align: center;
+    margin: auto;
+}
+
+.Home .content h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Home .content p{
+    font-size: 10px;
+    line-height: 15px;
+}
+
+/* -------------BUTTON I LOST N I FOUND DI HOME------------ */
+
+.Home .foundlost .found{
+    position: absolute;
+    bottom: 0;
+    left: 380px; /* jarak antar button */
+    display: flex;
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #10316B;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.Home .foundlost .lost{
+    position: absolute;
+    bottom: 0;
+    right: 380px;
+    display: flex;
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #10316B;
+    color: #ffffff;
+    font-size: 18px;
+}
+/* -------------BUTTON I LOST N I FOUND DI HOME------------ */
+
+/* -------------OUR GOALS------------ */
+
+.Found .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.Found .row .img{
+    flex: 1 1 45rem;
+    margin-top: 5%;
+}
+
+.Found .row .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    margin: auto;
+} 
+
+
+.Found .row .content h3{
+    font-size: 3rem;
+    text-align: center;
+} 
+
+.Found .row .content p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: center;
+} 
+/* -------------OUR GOALS------------ */
+
+/* -------------BUTTON LOST N FOUND------------ */
+
+.btn {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 50px; /* Jarak atas sebesar piksel */
+    margin-bottom: 30px; /* Jarak bawah sebesar piksel */
+}
+
+.btn .btn-group .btn-found{
+    display: inline-flex;
+    width: 474px;
+    padding: 10px;
+    justify-content: center; /* text berada ditengah */
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    background: #0B409C;
+    color: #ffffff;
+    
+}
+
+.btn .btn-group .btn-lost{
+    display: inline-flex;
+    padding: 10px 200px;
+    width: 474px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid rgba(16, 49, 107, 0.50);
+    background: #F2F7FF;
+    color: #000000;
+}
+/* -------------BUTTON LOST N FOUND------------ */
+
+/*------------CARD------------- */
+.card-container {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 50px; /* Jarak atas sebesar 10 piksel */
+    margin-bottom: 30px; /* Jarak bawah sebesar 20 piksel */
+}
+
+.card {
+    background: rgba(253, 190, 52, 0.80);
+    width: 300px;
+    margin: 10px;
+    border: px solid #ccc;
+    border-radius: 10px;
+    display: flexbox;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    justify-content: center;
+    
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* Sudut lengkung sudut atas kiri 20px */
+    border-top-right-radius: 10px; /* Sudut lengkung sudut atas kanan 30px */
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p{
+    margin: 5px;
+    font-size: 12px;
+}
+/*------------CARD------------- */
+
+/*------------FOOTER------------- */
+.footer{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: #10316B;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .footer-content h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #10316B;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries (Responsive) */
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .bi-list{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff ;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    @media (max-width:450px){
+        html{
+            font-size: 50%;
+        }
+    }
+
+}
+
