@@ -1,0 +1,103 @@
+:root{
+    --blue:#F2F7FF;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    background-color: #F2F7FF;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* ------------Sampul Landing page------------ */
+
+section{
+    padding: 2rem 9%;
+}
+
+.Home .icons{
+    margin-left: 110rem;
+    margin-top: 1rem;
+    font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container .input{
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.search_wrap{
+    width: 500px;
+    margin-top: 18%;
+    margin-left: 4.5%;
+    justify-content: center;
+}
+
+.search_wrap .search_box{
+    position: relative;
+    width: 600px;
+    height: 60px;
+}
+
+.search_wrap .search_box .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.search_wrap .search_box .btn{
+    position: relative;
+    top: 0;
+    margin-left: 150%;
+    width: 60px;
+    height: 100%;
+    background: #10316B;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+    background: #0b2045;
+}
+
+.search_wrap .search_box .btn.btn_common .bi:hover{
+    background: #0b2045;
+}
+
+.search_wrap .search_box .btn.btn_common .bi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #ffffff;
+    background: #10316B;
+}
+

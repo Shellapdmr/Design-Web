@@ -1,0 +1,233 @@
+:root{
+    --blue:#F2F7FF;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* ------------Sampul Landing page------------ */
+
+section{
+    padding: 2rem 9%;
+}
+
+/*.Home {
+    background-position: left;
+}*/
+
+/* ------------------------ */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* ------------LOGO------------ */
+
+header .logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #FDBE34;
+}
+
+/* -----------NAVBAR------------ */
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: #FDBE34;
+}
+
+/* ------------ICONS------------ */
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #000000;
+    margin-left: 1.5rem;
+}
+
+header .icons i:hover{
+    color: #FDBE34;
+}
+
+/* -------------ICONS------------ */
+
+header #toggler{
+    display: none;
+}
+
+/*  LIST (responsive) */
+header .bi-list{
+    font-size: 3rem;
+    color: #000000;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* -------------HALAMAN HOME------------ */
+
+.Home{
+    display: flex;
+    min-height: 100vh;
+    background-color: #0B1E3E;
+    background-image: url("photo/bground");
+    background-size: cover;
+}
+
+.Home .rectangle{
+    width: 500px;
+    height: 440px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-top: 5%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Home .rectangle .isian h3{ /* Description Of The Pet*/
+    font-family: Inter;
+    margin-bottom: 4%;
+    text-align: center;
+    color: #10316B;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Home .rectangle .textbox{
+    flex-shrink: 0;
+    color: #000;
+    margin-left: 15%;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    border-color: rgba(16, 49, 107, 0.30);
+}
+
+.Home .rectangle  .textbox .ctn{
+    display: flex;
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FDBE34;
+    margin-top: 4%;
+}
+
+.Home .rectangle .textbox h1{
+    font-family: Inter;
+    font-size: 14px;
+    margin-top: 2%;
+}
+
+input[type="text"] {
+    background-color: #f0f0f0; /* Warna latar belakang elemen input */
+    padding: 5px; /* Padding untuk memberikan ruang di dalam input */
+    width: 350px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+
+.Home .icons {
+    margin-top: 2rem;
+    font-size: 18px;
+    margin-left: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries (Responsive) */
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .bi-list{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff ;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    @media (max-width:450px){
+        html{
+            font-size: 50%;
+        }
+    }
+
+}

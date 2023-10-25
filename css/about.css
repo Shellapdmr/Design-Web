@@ -48,6 +48,7 @@ header .logo{
     font-size: 3rem;
     color: black;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 header .logo span{
@@ -60,6 +61,7 @@ header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #000000;
+    text-decoration: none;
 }
 
 header .navbar a:hover{
@@ -99,10 +101,10 @@ header .bi-list{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: #F2F7FF;
-    /*background: url() no-repeat;*/
+    background: url(../photo/bground.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    text-decoration: none;
 }
 
 .Home .content{
@@ -112,9 +114,11 @@ header .bi-list{
 }
 
 .Home .content h3{
+    margin-top: 20%;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
+    font-family: Inter;
 }
 
 .Home .content p{
@@ -128,13 +132,12 @@ header .bi-list{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 5%;
     
 }
 
 .Found .row .img{
     flex: 1 1 45rem;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .Found .row .content{
@@ -146,16 +149,97 @@ header .bi-list{
 .Found .row .content h3{
     font-size: 3rem;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 12%;
+    font-family: Inter;
 } 
 
 .Found .row .content p{
     padding: 1rem 0;
     line-height: 1.8;
+    font-size: 11px;
     text-align: center;
+    font-family: Inter;
 } 
 /* -------------ABOUT US------------ */
+/*------------USER STORY------------- */
 
+.story-container .user-stories{
+    margin-top: 7%;
+}
+
+.user {
+    border-radius: 0px 50px;
+    background: rgba(253, 190, 52, 0.30);
+    width: 250px;
+    height: 150px;
+    border: px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.user .stories {
+    padding: 35px;
+}
+
+
+.story-container .user-stories h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: Inter;
+}
+/*------------USER STORY------------- */
+/*------------USER STORY------------- */
+
+.story-container2 .user-stories2{
+    margin-top: 7%;
+}
+
+.user2 {
+    border-radius: 0px 50px;
+    background: rgba(16, 49, 107, 0.30);
+    width: 250px;
+    height: 150px;
+    border: px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.user2 .stories2 {
+    padding: 35px;
+}
+/*------------USER STORY------------- */
+/*------------USER STORY------------- */
+
+.user3 {
+    border-radius: 0px 50px;
+    background: rgba(253, 190, 52, 0.30);
+    width: 250px;
+    height: 150px;
+    border: px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.user3 .stories3 {
+    padding: 35px;
+}
+
+/*------------USER STORY------------- */
 
 
 

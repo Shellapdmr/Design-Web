@@ -1,0 +1,305 @@
+:root{
+    --blue:#F2F7FF;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* ------------Sampul Landing page------------ */
+
+section{
+    padding: 2rem 9%;
+}
+
+/*.Home {
+    background-position: left;
+}*/
+
+/* ------------------------ */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #F2F7FF;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* ------------LOGO------------ */
+
+header .logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #FDBE34;
+}
+
+/* -----------NAVBAR------------ */
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: #FDBE34;
+}
+
+/* ------------ICONS------------ */
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #000000;
+    margin-left: 1.5rem;
+}
+
+header .icons i:hover{
+    color: #FDBE34;
+}
+
+/* -------------ICONS------------ */
+
+header #toggler{
+    display: none;
+}
+
+/*  LIST (responsive) */
+header .bi-list{
+    font-size: 3rem;
+    color: #000000;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* -------------HALAMAN HOME------------ */
+
+.Home{
+    display: flex;
+    align-items: center;
+    min-height: 145vh;
+    background-repeat: no-repeat; /* Opsional: untuk menghindari pengulangan gambar */
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    background-color: #0B1E3E;
+}
+
+.Home .rectangle0{
+    width: 1200px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-top: 5%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Home .rectangle{
+    width: 1200px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-top: 5%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+
+.Home .rectangle0 .iconback{
+    font-size: 28px;
+    margin-top: 3%;
+    margin-left: 8%;
+    color: #0B1E3E;
+}
+
+.iconback i:hover{
+    color: #FDBE34;
+}
+
+.Home .rectangle0 .isian h3{
+    color: #0B1E3E;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.Home .rectangle .left-panel, .right-panel {
+    width: 40%; /* Membagi layar menjadi dua bagian */
+    height: 90%;
+    /*border: 1px solid #000;*/
+    flex: 1;
+}
+
+.Home .rectangle .left-panel{
+    margin-left: 15%;
+}
+
+.Home .rectangle .right-panel{
+    margin-right: 3%;
+}
+
+.Home .rectangle .left-panel .table-container .border{
+    width: 380px;
+    height: 350px;
+    background-color: rgba(16, 49, 107, 0.30);
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-bottom: 3%;
+}
+
+.Home .rectangle .left-panel .table-container .border .icon-image{
+    display: flex;
+    justify-content: center; /* Pusatkan ikon secara horizontal */
+    align-items: center; /* Pusatkan ikon secara vertikal */
+    height: 330px; /* Tinggi elemen untuk ikon */
+    color: #F2F7FF;
+}
+
+.Home .rectangle .left-panel .table-container h2{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    color: #0B1E3E;
+    font-family: inter;
+}
+
+h1{
+    margin-bottom:5px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-style: normal;
+}
+input[type="text"] {
+    background-color: #f0f0f0; /* Warna latar belakang elemen input */
+    padding: 5px; /* Padding untuk memberikan ruang di dalam input */
+    width: 280px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+/*RIGHT PANEL*/
+
+.Home .rectangle .right-panel .textbox{
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    border-color: rgba(16, 49, 107, 0.30);
+    margin-bottom: 5%;
+}
+
+.Home .rectangle .right-panel .textbox4 .ctn{
+    display: flex;
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FDBE34;
+    margin-left: 27rem; /* SEND */
+}
+
+input[type="text"] {
+    background-color: rgba(16, 49, 107, 0.30); /* Warna latar belakang elemen input */
+    padding: 5px; /* Padding untuk memberikan ruang di dalam input */
+    width: 350px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+td input[type="checkbox"] {
+    margin-right: 8px; /* Menambahkan margin kanan antara checkbox */
+}
+
+
+
+
+
+/* media queries (Responsive) */
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .bi-list{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff ;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    @media (max-width:450px){
+        html{
+            font-size: 50%;
+        }
+    }
+
+}

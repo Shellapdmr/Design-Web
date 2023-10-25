@@ -48,6 +48,7 @@ header .logo{
     font-size: 3rem;
     color: black;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 header .logo span{
@@ -60,6 +61,7 @@ header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #000000;
+    text-decoration: none;
 }
 
 header .navbar a:hover{
@@ -99,10 +101,11 @@ header .bi-list{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: #F2F7FF;
-    /*background: url() no-repeat;*/
+    background: url(../photo/bground.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    text-decoration: none;
+
 }
 
 .Home .content{
@@ -112,49 +115,48 @@ header .bi-list{
 }
 
 .Home .content h3{
+    font-family: Inter;
+    font-style: normal;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 5%;
 }
 
 .Home .content p{
-    font-size: 10px;
-    line-height: 15px;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 5%;
 }
 
 /* -------------BUTTON I LOST N I FOUND DI HOME------------ */
 
-.Home .foundlost .found{
-    position: absolute;
-    bottom: 0;
-    left: 380px; /* jarak antar button */
+
+.Home .button-container {
     display: flex;
-    width: 200px;
-    height: 120px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    background: #10316B;
-    color: #ffffff;
-    font-size: 18px;
+    margin-top: 42%;
+    margin-left: 25%;
+    position: absolute;
 }
 
-.Home .foundlost .lost{
-    position: absolute;
-    bottom: 0;
-    right: 380px;
-    display: flex;
+.Home .button-container .button {
+    margin-right: 50px; /* Memberikan spasi horizontal antara tombol */
+    text-decoration: none; /* Menghapus gaya default link */
+    padding: 10px; /* Atur ukuran tombol sesuai kebutuhan Anda */
+    border-radius: 15px; /* Membuat tombol menjadi rounded */
+    text-align: center; /* Mengatur teks ke tengah secara horizontal */
+    justify-content: center;
+    left: 380px;
     width: 200px;
     height: 120px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
     background: #10316B;
     color: #ffffff;
     font-size: 18px;
+    line-height: 10rem;
+    font-family: Inter;
 }
+
 /* -------------BUTTON I LOST N I FOUND DI HOME------------ */
 
 /* -------------OUR GOALS------------ */
@@ -168,25 +170,30 @@ header .bi-list{
 
 .Found .row .img{
     flex: 1 1 45rem;
-    margin-top: 5%;
+    margin-top: 12%;
+    margin-bottom: 3%;
 }
 
 .Found .row .content{
     flex: 1 1 40rem;
     padding: 2rem;
-    margin: auto;
+    margin-top: 8%;
 } 
 
 
 .Found .row .content h3{
     font-size: 3rem;
     text-align: center;
+    font-family: Inter;
 } 
 
 .Found .row .content p{
     padding: 1rem 0;
     line-height: 1.8;
     text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    font-family: Inter;
 } 
 /* -------------OUR GOALS------------ */
 
@@ -242,7 +249,7 @@ header .bi-list{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: left;
     justify-content: center;
-    
+    margin-bottom: 7%;
 }
 
 .card img {
@@ -259,8 +266,97 @@ header .bi-list{
 .card-content p{
     margin: 5px;
     font-size: 12px;
+    font-family: Inter;
 }
 /*------------CARD------------- */
+
+/*------------ARTIKEL------------- */
+
+.Artikel{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: #F2F7FF;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+}
+
+.Artikel .row {
+    display: flex;
+}
+
+.Artikel .row .articel{
+    padding-top: 40px;
+}
+
+.Artikel .row .articel h3{
+    font-family: Inter;
+    font-size: 30px;
+    text-align: left;
+    margin-right: 70px;
+    margin-left: 150px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    line-height: 40px;
+} 
+
+.Artikel .row .articel .ctn { 
+    padding: 8px 15px;
+    background: #FDBE34;
+    border-radius: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 150px;
+    font-family: Inter;
+}
+
+.Artikel .row .img{
+    position: relative;
+}
+
+
+/*------------ARTIKEL------------- */
+
+/*------------USER STORY------------- */
+
+.story-container .user-stories{
+    margin-top: 8%;
+}
+
+.user {
+    border-radius: 0px 50px;
+    background: rgba(253, 190, 52, 0.30);
+    width: 250px;
+    height: 150px;
+    border: px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    justify-content: center;
+    margin-left: 3.5%;
+}
+
+.user .stories {
+    padding: 35px;
+}
+
+
+.story-container .user-stories h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: Inter;
+}
+/*------------USER STORY------------- */
+
+
 
 /*------------FOOTER------------- */
 .footer{

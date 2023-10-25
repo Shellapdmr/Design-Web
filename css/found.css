@@ -48,6 +48,7 @@ header .logo{
     font-size: 3rem;
     color: black;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 header .logo span{
@@ -60,6 +61,7 @@ header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #000000;
+    text-decoration: none;
 }
 
 header .navbar a:hover{
@@ -99,10 +101,10 @@ header .bi-list{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: #0B1E3E;
-    /*background: url() no-repeat;*/
+    background: url(../photo/bground2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    text-decoration: none;
 }
 
 .Home .content{
@@ -113,9 +115,9 @@ header .bi-list{
 .Home .content h3{
     font-size: 28px;
     text-align: left;
-    margin-bottom: 10px;
     color: #fff;
     margin-bottom: 30px;
+    font-family: Inter;
 }
 
 /* -------------HOVER------------ */
@@ -125,7 +127,343 @@ header .bi-list{
     background: #FDBE34;
     border-radius: 30px;
     color: #000000;
+    text-decoration: none;
+    font-size: 12px;
 }
+
+/* ----Jika Anda Menemukan Hewan Peliharaan ---- */
+
+.Info .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row .img{
+    flex: 1 1 45rem;
+    margin-top: 4%;
+    border-radius: 100px 0px 100px 0px;
+    position: relative;
+
+}
+
+.Info .row .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    margin-left: 4%;
+} 
+
+
+.Info .row .content h3{
+    font-family: Inter;
+    margin-top: 5%;
+    font-size: 18px;
+    text-align: left;
+} 
+
+.Info .row .content p{
+    font-size: 10px;
+    font-family: Inter;
+    padding: 2px;
+    line-height: 1.8;
+    text-align: left;
+} 
+/* ----Jika Anda Menemukan Hewan Peliharaan ---- */
+
+/* -------------BUTTON FOUND------------ */
+
+.btn {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 50px; /* Jarak atas sebesar piksel */
+    margin-bottom: 30px; /* Jarak bawah sebesar piksel */
+    font-family: Inter;
+}
+
+.btn .btn-group .btn-found{
+    display: inline-flex;
+    width: 950px;
+    padding: 10px;
+    justify-content: center; /* text berada ditengah */
+    align-items: center;
+    border-radius: 10px;
+    background: #10316B;
+    color: #ffffff;
+    
+}
+
+/* -------------BUTTON FOUND------------ */
+
+/*------------CARD------------- */
+.card-container {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 50px; /* Jarak atas sebesar 10 piksel */
+    margin-bottom: 30px; /* Jarak bawah sebesar 20 piksel */
+}
+
+.card {
+    background: rgba(253, 190, 52, 0.80);
+    width: 300px;
+    margin: 10px;
+    border: px solid #ccc;
+    border-radius: 10px;
+    display: flexbox;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* Sudut lengkung sudut atas kiri 20px */
+    border-top-right-radius: 10px; /* Sudut lengkung sudut atas kanan 30px */
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p{
+    margin: 5px;
+    font-size: 12px;
+    font-family: Inter;
+}
+/*------------CARD------------- */
+
+/*------------CARD------------- */
+.card-container2 {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 50px; /* Jarak atas sebesar 10 piksel */
+    margin-bottom: 30px; /* Jarak bawah sebesar 20 piksel */
+}
+
+.card2 {
+    background: rgba(253, 190, 52, 0.80);
+    width: 300px;
+    margin: 10px;
+    border: px solid #ccc;
+    border-radius: 10px;
+    display: flexbox;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 3%;
+
+}
+
+.card2 img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* Sudut lengkung sudut atas kiri 20px */
+    border-top-right-radius: 10px; /* Sudut lengkung sudut atas kanan 30px */
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p{
+    margin: 5px;
+    font-size: 12px;
+    font-family: Inter;
+}
+/*------------CARD------------- */
+
+/*------------ARTIKEL------------- */
+
+.Artikel{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F2F7FF;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+}
+
+.Artikel .row {
+    display: flex;
+}
+
+.Artikel .row .articel{
+    padding-top: 30px;
+}
+
+.Artikel .row .articel h3{
+    font-size: 28px;
+    text-align: left;
+    margin-right: 70px;
+    margin-left: 50px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    line-height: 40px;
+    font-family: Inter;
+} 
+
+.Artikel .row .articel .ctn { 
+    padding: 8px 15px;
+    background: #FDBE34;
+    border-radius: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 50px;
+    font-family: Inter;
+}
+
+.Artikel .row .img{
+    position: relative;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+
+.Artikel .row .img2{
+    position: relative;
+    margin: auto;
+    margin-right: 5%;
+}
+
+/*------------ARTIKEL------------- */
+/*------------ARTIKEL BAWAH------------- */
+
+.judul .user-stories h3{
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    font-family: Inter;
+}
+
+.cardb-container {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 5px; /* Jarak atas sebesar 10 piksel */
+    margin-bottom: 30px; /* Jarak bawah sebesar 20 piksel */
+}
+
+.cardb {
+    height: 150px;
+    margin: 25px;
+    border: px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    justify-content: center;
+}
+
+.cardb img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body p{
+    margin: 5px;
+    font-size: 14px;
+    font-family: Inter;
+}
+
+.btn-foundpet .btn-foundp{ /*See More Button*/
+        padding: 8px 15px;
+        background: #FDBE34;
+        border-radius: 30px;
+        color: #000000;
+        font-size: 12px;  
+        margin-left: 80%;
+        margin-bottom: 5%;
+}
+/*------------ARTIKEL BAWAH------------- */
+
+
+
+
+
+
+
+/*------------FOOTER------------- */
+.footer{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: #10316B;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    margin-top: 15%;
+}
+
+.footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .footer-content h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #10316B;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 200;
+}
+/*------------FOOTER------------- */
+
 
 
 

@@ -91,13 +91,8 @@ h1 {
     color: #FDBE34;
 }
 
-/*
-.icons{
-    font-size: 2.5rem;
-    color: #000000;
-    margin-left: 5rem;
+
+.icons .btn-close{
+    margin-left: 25rem;
 }
 
-.icons i:hover{
-    color: #FDBE34;
-} */
