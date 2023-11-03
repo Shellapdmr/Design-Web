@@ -33,7 +33,7 @@ section{
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #F2F7FF;
+    background: #fff;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -80,6 +80,25 @@ header .icons i:hover{
     color: #FDBE34;
 }
 
+header .icons .signup{
+    padding: 8px 15px;
+    background: #F2F7FF;
+    border-radius: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    font-family: Inter;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+header .icons .signup:hover{
+    background-color: rgba(253, 190, 52, 0.80);
+}
+
+
 /* -------------ICONS------------ */
 
 header #toggler{
@@ -94,86 +113,172 @@ header .bi-list{
     cursor: pointer;
     display: none;
 }
-/* -------------HALAMAN HOME------------ */
+
+.icons .sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0;
+}
+
+.sub-menu-wrap.open-class {
+    max-height: 400px;
+}
+
+header .icons .sub-menu {
+    background: #ffffff;
+    top: 8px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.bi-person-fill, .bi-box-arrow-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 5px;
+    width: 40px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.bi-person-fill p, .bi-box-arrow-right p {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.bi-person-fill:hover p, .bi-box-arrow-right:hover p {
+    color: #FDBE34;
+}
+
+.bi-person-fill span, .bi-box-arrow-right span {
+    font-size: 22px; /* Perbaikan dari "font" menjadi "font-size" */
+    transition: transform 0.3s;
+}
+
+.bi-person-fill:hover span, .bi-box-arrow-right:hover span {
+    transform: translateX(5px); /* Perbaikan dari "transform: translate(5px);" */
+}
+
+
+/* ------------HOVER------------ */
 
 .Home{
     display: flex;
     align-items: center;
-    margin-top: 7%;
+    min-height: 100vh;
+    background: url(../photo/bground2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     text-decoration: none;
 }
 
-.Home .iconback{
-    font-size: 20px;
-    margin-bottom: 12rem;
+.Home .content{
+    max-width: 80rem;
+    text-align: left;
 }
 
-.Home .isian{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.Home .content h3{
+    font-size: 28px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: Inter;
 }
 
-.Home .isian h3{
-    color: #000;
-    font-size: 25px;
-    margin-left: auto;
-}
+/* -------------HOVER------------ */
 
-.Home .isian .ctn{
+.ctn {  /* Report a Found Pet */
     padding: 8px 15px;
     background: #FDBE34;
     border-radius: 30px;
     color: #000000;
     text-decoration: none;
     font-size: 12px;
-    margin-left: 61.5rem;
+    font-family: Inter;
 }
 
-/* -------------BUTTON LOST N FOUND------------ */
+/* ----Jika Anda Menemukan Hewan Peliharaan ---- */
+
+.Info .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row .img{
+    flex: 1 1 45rem;
+    margin-top: 7.5%;
+    border-radius: 100px 0px 100px 0px;
+    position: relative;
+    margin-right: 8%;
+}
+
+.Info .row .content{
+    flex: 1 1 40rem;
+} 
+
+
+.Info .row .content h3{
+    font-family: Inter;
+    margin-top: 15%;
+    font-size: 18px;
+    text-align: left;
+} 
+
+.Info .row .content p{
+    font-size: 12px;
+    font-family: Inter;
+    line-height: 1.6;
+    text-align: left;
+} 
+
+/* ----Jika Anda Menemukan Hewan Peliharaan ---- */
+
+/* -------------BUTTON LOST------------ */
 
 .btn {
     display: flex; /* Mengatur tampilan flex untuk card-container */
     justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 50px; /* Jarak atas sebesar piksel */
     margin-bottom: 30px; /* Jarak bawah sebesar piksel */
 }
 
 .btn .btn-group .btn-found{
     display: inline-flex;
-    width: 474px;
+    width: 950px;
     padding: 10px;
     justify-content: center; /* text berada ditengah */
     align-items: center;
-    border-radius: 10px 0px 0px 10px;
-    background: #0B409C;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
+    border-radius: 10px;
+    background: #10316B;
+    color: #ffffff;
     
 }
 
-.btn .btn-group .btn-lost{
-    font-size: 14px;
-    display: inline-flex;
-    padding: 10px 200px;
-    width: 474px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 10px 10px 0px;
+/* -------------BUTTON LOST------------ */
 
-    border: 1px solid rgba(16, 49, 107, 0.50);
-    background: #F2F7FF;
-    color: #000000;
-
-    text-decoration: none;
-}
-/* -------------BUTTON LOST N FOUND------------ */
 /*------------CARD------------- */
 .card-container {
     display: flex; /* Mengatur tampilan flex untuk card-container */
     justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
-    /* Jarak atas sebesar 10 piksel */
+    margin-top: 50px; /* Jarak atas sebesar 10 piksel */
     margin-bottom: 30px; /* Jarak bawah sebesar 20 piksel */
+    font-family: Inter;
 }
 
 .card {
@@ -202,9 +307,9 @@ header .bi-list{
 .card-content p{
     margin: 5px;
     font-size: 12px;
+    font-family: Inter;
 }
 /*------------CARD------------- */
-
 /*------------CARD------------- */
 .card-container2 {
     display: flex; /* Mengatur tampilan flex untuk card-container */
@@ -224,7 +329,6 @@ header .bi-list{
     text-align: left;
     justify-content: center;
     margin-bottom: 3%;
-
 }
 
 .card2 img {
@@ -241,70 +345,120 @@ header .bi-list{
 .card-content p{
     margin: 5px;
     font-size: 12px;
+    font-family: Inter;
 }
 /*------------CARD------------- */
-/*------------CARD------------- */
-.card-container3 {
-    display: flex; /* Mengatur tampilan flex untuk card-container */
-    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
-    margin-bottom: 50px; /* Jarak bawah sebesar 20 piksel */
+/*------------ARTIKEL------------- */
+
+.Artikel{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F2F7FF;
+    height: auto;
+    width: 100vw;
+    color: #fff;
 }
 
-.card3 {
-    background: rgba(253, 190, 52, 0.80);
-    width: 300px;
-    margin: 10px;
+.Artikel .row {
+    display: flex;
+}
+
+.Artikel .row .articel{
+    padding-top: 30px;
+}
+
+.Artikel .row .articel h3{
+    font-size: 28px;
+    text-align: left;
+    margin-right: 70px;
+    margin-left: 50px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    line-height: 40px;
+} 
+
+.Artikel .row .articel .ctn { 
+    padding: 8px 15px;
+    background: #FDBE34;
+    border-radius: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+.Artikel .row .img{
+    position: relative;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+
+.Artikel .row .img2{
+    position: relative;
+    margin: auto;
+    margin-right: 5%;
+}
+
+
+/*------------ARTIKEL------------- */
+/*------------ARTIKEL BAWAH------------- */
+
+.judul .user-stories h3{
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    font-family: Inter;
+}
+
+.cardb-container {
+    display: flex; /* Mengatur tampilan flex untuk card-container */
+    justify-content: center; /* Mengatur card berada di tengah secara horizontal di dalam card-container */
+    margin-top: 5px; /* Jarak atas sebesar 10 piksel */
+    margin-bottom: 200px; /* Jarak bawah sebesar 20 piksel */
+}
+
+.cardb {
+    height: 150px;
+    margin: 25px;
     border: px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flexbox;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: left;
     justify-content: center;
-    margin-bottom: 2%;
-
 }
 
-.card3 img {
+.cardb img {
     max-width: 100%;
     height: auto;
-    border-top-left-radius: 10px; /* Sudut lengkung sudut atas kiri 20px */
-    border-top-right-radius: 10px; /* Sudut lengkung sudut atas kanan 30px */
+    border-radius: 5px;
 }
 
-.card-content {
+.card-body {
     padding: 10px;
 }
 
-.card-content p{
+.card-body p{
     margin: 5px;
-    font-size: 12px;
-}
-/*------------CARD------------- */
-
-
-.pagination {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: right;
-    margin-right: 13.5%;
-    margin-bottom: 5%;
+    font-size: 14px;
+    font-family: Inter;
 }
 
-.page-item {
-    margin: 0;
-}
-
-.page-link {
-    padding: 5px 10px;
-    border: 1px solid #10316B;
-    text-decoration: none;
+.btn-foundpet .btn-foundp{ /*See More Button*/
+    padding: 8px 15px;
+    background: #FDBE34;
+    border-radius: 30px;
     color: #000000;
-    font-family: inter;
+    font-size: 12px;  
+    margin-left: 80%;
+    margin-bottom: 5%;
+    font-family: Inter;
 }
-
-
-
+/*------------ARTIKEL BAWAH------------- */
 
 /*------------FOOTER------------- */
 .footer{
@@ -377,6 +531,17 @@ header .bi-list{
     opacity: .6;
     font-weight: 200;
 }
+
+/*------------FOOTER------------- */
+
+
+
+
+
+
+
+
+
 
 
 

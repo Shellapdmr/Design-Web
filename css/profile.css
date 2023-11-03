@@ -1,0 +1,552 @@
+:root{
+    --blue:#F2F7FF;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* ------------Sampul Landing page------------ */
+
+section{
+    padding: 2rem 9%;
+}
+
+/* ------------Profile------------ */
+
+.Home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat; /* Opsional: untuk menghindari pengulangan gambar */
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+
+.Home .rectangle0 .iconback{
+    font-size: 30px;
+    margin-right: 80%;
+    margin-bottom: 30rem;
+}
+
+
+.iconback i:hover{
+    color: #FDBE34;
+}
+
+.Home .rectangle{
+    width: 1200px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+
+.Home .rectangle .left-panel, .right-panel {
+    width: 40%; /* Membagi layar menjadi dua bagian */
+    height: 90%;
+    /*border: 1px solid #000;*/
+    flex: 1;
+}
+
+.Home .rectangle .left-panel{
+    margin-left: 18%;
+}
+
+.Home .rectangle .right-panel{
+    margin-right: 8%;
+}
+
+.Home .rectangle .left-panel .table-container .border{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(16, 49, 107, 0.30);
+    border-radius: 300px;
+    flex-shrink: 0;
+    margin-bottom: 3%;
+}
+
+.Home .rectangle .left-panel .table-container .border .icon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: #F2F7FF;
+}
+
+
+.Home .rectangle .left-panel .table-container h2{
+    margin-bottom: 3%;
+    font-size: 18px;
+    color: #0B1E3E;
+    font-family: inter;
+}
+
+h1{
+    margin-bottom:5px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-style: normal;
+}
+input[type="text"] {
+    background-color: #f0f0f0; /* Warna latar belakang elemen input */
+    padding: 5px; /* Padding untuk memberikan ruang di dalam input */
+    width: 280px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.Home .rectangle .left-panel .table-container h1{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 12px;
+    gap: 10px;
+    border-radius: 5px;
+    background: #F2F7FF;
+    font-family: inter;
+}
+
+/*RIGHT PANEL*/
+
+.Home .rectangle .right-panel .textbox{
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    border-color: rgba(16, 49, 107, 0.30);
+    margin-bottom: 5%;
+}
+
+.Home .rectangle .right-panel .textbox6 .ctn{
+    display: flex;
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FDBE34;
+    margin-left: 27rem; /* SEND */
+    font-family: inter;
+}
+
+input[type="text"] {
+    background-color: rgba(16, 49, 107, 0.30); /* Warna latar belakang elemen input */
+    padding: 5px; /* Padding untuk memberikan ruang di dalam input */
+    width: 350px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+td input[type="checkbox"] {
+    margin-right: 8px; /* Menambahkan margin kanan antara checkbox */
+}
+
+
+/* ------------Profile------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* ------------LOGO------------ */
+
+header .logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #FDBE34;
+}
+
+/* -----------NAVBAR------------ */
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: #FDBE34;
+}
+
+/* ------------ICONS------------ */
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #000000;
+    margin-left: 1.5rem;
+}
+
+header .icons i:hover{
+    color: #FDBE34;
+}
+
+/* -------------ICONS------------ */
+
+header #toggler{
+    display: none;
+}
+
+/*  LIST (responsive) */
+header .bi-list{
+    font-size: 3rem;
+    color: #000000;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.icons .sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0;
+}
+
+.sub-menu-wrap.open-class {
+    max-height: 400px;
+}
+
+header .icons .sub-menu {
+    background: #ffffff;
+    top: 8px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.bi-person-fill, .bi-box-arrow-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 5px;
+    width: 40px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.bi-person-fill p, .bi-box-arrow-right p {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.bi-person-fill:hover p, .bi-box-arrow-right:hover p {
+    color: #FDBE34;
+}
+
+.bi-person-fill span, .bi-box-arrow-right span {
+    font-size: 22px; /* Perbaikan dari "font" menjadi "font-size" */
+    transition: transform 0.3s;
+}
+
+.bi-person-fill:hover span, .bi-box-arrow-right:hover span {
+    transform: translateX(5px); /* Perbaikan dari "transform: translate(5px);" */
+}
+/*------------PROFILE------------------*/
+/* Gaya untuk gambar avatar */
+.avatar {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Gaya untuk tombol pilihan gambar */
+.file-upload {
+    display: none;
+}
+
+/* Gaya untuk panel website */
+.panel.panel-default {
+    margin-top: 10px;
+}
+
+/* Gaya untuk daftar aktivitas */
+.list-group {
+    margin-top: 10px;
+}
+
+/* Gaya untuk ikon media sosial */
+.panel.panel-default .panel-body i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+/* Gaya untuk tab dan konten */
+.nav-tabs {
+    margin-top: 20px;
+}
+
+/* Gaya untuk form input */
+.form-group {
+    margin-top: 10px;
+}
+
+/* Gaya untuk tombol "Simpan" */
+.btn.btn-lg.btn-success {
+    margin-top: 10px;
+}
+
+/* Gaya untuk tombol "Reset" */
+.btn.btn-lg {
+    margin-top: 10px;
+}
+
+
+/*------------FOOTER------------- */
+.footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #10316B;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .footer-content h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #10316B;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries (Responsive) */
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .bi-list{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff ;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content img{
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stories{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width:450px){
+        html{
+            font-size: 50%;
+        }
+    }
+
+
+}
+

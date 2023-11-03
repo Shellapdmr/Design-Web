@@ -1,0 +1,239 @@
+        <div class="icons">
+            <i class="bi bi-person-circle" onclick="togglemenu()"></i>
+            <a href="search.html">
+                <i class="bi bi-search"></i>
+            </a>
+
+            <div class="sub-menu-wrap" id="sub-menu-wrap">
+                <div class="sub-menu">
+                    <a href="#" class="bi bi-person-fill">
+                        <p>Profile</p>
+                        <span></span>
+                    </a>
+                    <hr>
+                    <a href="index.html" class="bi bi-box-arrow-right">
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let submenu = document.getElementById("sub-menu-wrap");
+            let personCircleIcon = document.querySelector(".bi-person-circle");
+        
+            // Fungsi untuk menampilkan sub-menu
+            function showMenu() {
+                submenu.classList.add("open-class");
+            }
+        
+            // Fungsi untuk menutup sub-menu
+            function hideMenu() {
+                submenu.classList.remove("open-class");
+            }
+        
+            // Fungsi event listener untuk menutup sub-menu saat mengklik di luar sub-menu
+            function clickOutside(event) {
+                if (!submenu.contains(event.target) && event.target !== personCircleIcon) {
+                    hideMenu();
+                }
+            }
+        
+            personCircleIcon.addEventListener("click", showMenu);
+            document.addEventListener("click", clickOutside);
+        </script>
+
+--------------- CSS ------------
+
+.icons .sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0;
+}
+
+.sub-menu-wrap.open-class {
+    max-height: 400px;
+}
+
+header .icons .sub-menu {
+    background: #ffffff;
+    top: 8px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.bi-person-fill, .bi-box-arrow-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 5px;
+    width: 40px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.bi-person-fill p, .bi-box-arrow-right p {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.bi-person-fill:hover p, .bi-box-arrow-right:hover p {
+    color: #FDBE34;
+}
+
+.bi-person-fill span, .bi-box-arrow-right span {
+    font-size: 22px; /* Perbaikan dari "font" menjadi "font-size" */
+    transition: transform 0.3s;
+}
+
+.bi-person-fill:hover span, .bi-box-arrow-right:hover span {
+    transform: translateX(5px); /* Perbaikan dari "transform: translate(5px);" */
+}
+
+
+
+.Home .content h3{
+    font-family: Inter;
+    font-style: normal;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 5%;
+}
+
+.Home .content p{
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 23px;
+    margin-left: 5%;
+}
+
+--------------- POP UP ----------------
+
+        <div class="rectangle">
+             <!-- Konten panel kanan -->
+             <div class="left-panel"> 
+
+                <div class="table-container">
+                <h2>Upload picture</h2>
+
+                    <!-- ==== + photo ==== -->
+                    <div class="border">
+                        <div class="icon-image">
+                            <i class="bi bi-image-fill"style="font-size: 25px;"></i>
+                        </div>
+                    </div>
+
+                    <h2>Recipient contact details</h2>
+
+                    <div class="box1">
+                        <form action="" method="post">
+                            <table>
+                                <tr>
+                                    <h1>Name</h1>
+                                    <td><input type="text"></td> 
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+
+                    <div class="box2">
+                        <form action="" method="post">
+                            <table>
+                                <tr>
+                                    <h1>E-mail</h1>
+                                    <td><input type="text"></td> 
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+
+                    <div class="box3">
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <h1>Phone</h1>
+                                <td><input type="text"></td> 
+                            </tr>
+                        </table>
+                    </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Konten panel kanan -->
+            <!-- Konten panel kiri -->
+            <div class="right-panel">
+                <div class="textbox2">
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <h1>Nickname</h1>
+                                <td><input type="text"></td> 
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="textbox3">
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <h1>Gender</h1>
+                                <td><input type="text"></td> 
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="textbox4">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <h1>Missing Date</h1>
+                            <td><input type="text"></td> 
+                        </tr>
+                    </table>
+                </form>
+                </div>
+
+                <div class="textbox5">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <h1>Last Location</h1>
+                            <td><input type="text"></td> 
+                        </tr>
+                    </table>
+                </form>
+                </div>
+
+                <div class="textbox6">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <h1>A story about a pet</h1>
+                            <td><input type="text"></td> 
+                        </tr>
+                    </table>
+                </form>
+                <a href="afterreport_Lost.html" class="ctn">Send</a>
+                </div>
+            </div>
+        </div>

@@ -8,7 +8,7 @@
 
     <!-- ==== CSS ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/lost.css">
+    <link rel="stylesheet" href="css/found2.css">
  
 </head>
 <body>
@@ -21,21 +21,56 @@
         <a href="#" class="logo">PetsFound<span>.</span></a>
         <nav class="navbar">
             <a href="afterlog.html">Home</a>
-            <a href="found.html">Found a Pet</a>
-            <a href="#">Lost a Pet</a>
-            <a href="about.html">About</a>
+            <a href="#">Found a Pet</a>
+            <a href="lost2.html">Lost a Pet</a>
+            <a href="about2.html">About</a>
         </nav>
 
         <div class="icons">
+            <i class="bi bi-person-circle" onclick="togglemenu()"></i>
+            <a href="search2.html">
+                <i class="bi bi-search"></i>
+            </a>
 
-            <a href="signup.html">
-            <button type="button" class="signup">Sign Up</button>
-            </a>
-          
-            <a href="search.html">
-            <i class="bi bi-search"></i>
-            </a>
-          </div>
+            <div class="sub-menu-wrap" id="sub-menu-wrap">
+                <div class="sub-menu">
+                    <a href="profile.html" class="bi bi-person-fill">
+                        <p>Profile</p>
+                        <span></span>
+                    </a>
+                    <hr>
+                    <a href="index.html" class="bi bi-box-arrow-right">
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let submenu = document.getElementById("sub-menu-wrap");
+            let personCircleIcon = document.querySelector(".bi-person-circle");
+        
+            // Fungsi untuk menampilkan sub-menu
+            function showMenu() {
+                submenu.classList.add("open-class");
+            }
+        
+            // Fungsi untuk menutup sub-menu
+            function hideMenu() {
+                submenu.classList.remove("open-class");
+            }
+        
+            // Fungsi event listener untuk menutup sub-menu saat mengklik di luar sub-menu
+            function clickOutside(event) {
+                if (!submenu.contains(event.target) && event.target !== personCircleIcon) {
+                    hideMenu();
+                }
+            }
+        
+            personCircleIcon.addEventListener("click", showMenu);
+            document.addEventListener("click", clickOutside);
+        </script>
     </header>
     <!-- ==== header section ends ==== -->
 
@@ -44,8 +79,8 @@
         <div class="content">
             <h3>You are not alone.
             <br>
-            We are ready to help find the lost pet.</h3>
-            <a href="login.html" class="ctn">Search a Lost Pet</a>
+            We are ready to help find the pet's owner.</h3>
+            <a href="reportfound.html" class="ctn">Report a Found Pet</a>
         </div> 
     </section>
     <!-- ==== home section ends ==== -->
@@ -53,8 +88,8 @@
     <!-- ====Jika Anda Menemukan Hewan Peliharaan==== -->
     <section class="Info" id="Info">
         <div class="row"> 
-            
-            <img class="img" src="photo/lost.jpg" width="550px" height="350px"/>
+
+            <img class="img" src="photo/found.jpg" width="550px" height="350px"/>
 
             <div class="content">
                 <h3>Jika Anda Menemukan Hewan Peliharaan :</h3>
@@ -85,74 +120,75 @@
         </div>
     </section> 
     <!-- ==== Jika Anda Menemukan Hewan Peliharaan ==== -->
-    <!-- ==== Button lost start ==== -->
 
-       <div class="btn">
+    <!-- ==== Button found start ==== -->
+
+    <div class="btn">
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-            <button type="button" class="btn-found">Lost a Pet</button>
+            <button type="button" class="btn-found">Found a Pet</button>
         </div>
       </div>
 
-    <!-- ==== Button lost ends ==== -->
+    <!-- ==== Button found ends ==== -->
 
     
     <!-- ==== CARD START ==== -->
     <div class="card-container">
         <div class="card">
-          <img src="photo/meow2.jpg" alt="Gambar 1">
+          <img src="photo/meow3.jpg" alt="Gambar 1">
           <div class="card-content">
-              <p>Nickname : <strong>Hani</strong></p>
+              <p>Nickname : <strong>Unknown</strong></p>
               <p>Gender : <strong>Female</strong></p>
-              <p>Last Location :  <strong>Warung pak Sat</strong></p>
+              <p>Last Location :  <strong>Warmindo Gejos Cafe</strong></p>
           </div>
         </div>
   
         <div class="card">
-            <img src="photo/anj6.jpg" alt="Gambar 2">
+            <img src="photo/anj2.jpg" alt="Gambar 2">
             <div class="card-content">
-              <p>Nickname : <strong>Bimo</strong></p>
-              <p>Gender : <strong>Male</strong></p>
-              <p>Last Location :  <strong>Perumahan Linggarjati</strong></p>
-            </div>
-        </div>
-  
-        <div class="card">
-            <img src="photo/meow5.jpg" alt="Gambar 3">
-            <div class="card-content">
-              <p>Nickname : <strong>Tiara</strong></p>
-              <p>Gender : <strong>Female</strong></p>
-              <p>Last Location :  <strong>Mie Ayam Pak Mojo</strong></p>
-            </div>
-        </div>
-    </div>
-      <!-- ==== CARD ENDS ==== -->
-
-      <!-- ==== CARD START ==== -->
-    <div class="card-container2">
-        <div class="card2">
-          <img src="photo/anj5.jpg" alt="Gambar 1">
-          <div class="card-content">
               <p>Nickname : <strong>Blacky</strong></p>
               <p>Gender : <strong>Male</strong></p>
               <p>Last Location :  <strong>Perempatan UNCEN</strong></p>
+            </div>
+        </div>
+  
+        <div class="card">
+            <img src="photo/meow4.jpg" alt="Gambar 3">
+            <div class="card-content">
+              <p>Nickname : <strong>Unknown</strong></p>
+              <p>Gender : <strong>Female</strong></p>
+              <p>Last Location :  <strong>Ruko depan UNCEN</strong></p>
+            </div>
+        </div>
+      </div>
+      <!-- ==== CARD ENDS ==== -->
+
+       <!-- ==== CARD START ==== -->
+    <div class="card-container2">
+        <div class="card2">
+          <img src="photo/anj.jpg" alt="Gambar 1">
+          <div class="card-content">
+              <p>Nickname : <strong>Brenda</strong></p>
+              <p>Gender : <strong>Female</strong></p>
+              <p>Last Location :  <strong>Gg Kavling, Plered</strong></p>
           </div>
         </div>
   
         <div class="card2">
-            <img src="photo/anj4.jpg" alt="Gambar 2">
+            <img src="photo/meow.jpg" alt="Gambar 2">
             <div class="card-content">
-              <p>Nickname : <strong>Faris</strong></p>
-              <p>Gender : <strong>Male</strong></p>
-              <p>Last Location :  <strong>Sekitaran FT UNY</strong></p>
+              <p>Nickname : <strong>Niki</strong></p>
+              <p>Gender : <strong>Female</strong></p>
+              <p>Last Location :  <strong>Warung Bakso Bu Tatik</strong></p>
             </div>
         </div>
   
         <div class="card2">
-            <img src="photo/meow6.jpg" alt="Gambar 3">
+            <img src="photo/anj3.jpg" alt="Gambar 3">
             <div class="card-content">
-              <p>Nickname : <strong>Mely</strong></p>
-              <p>Gender : <strong>Female</strong></p>
-              <p>Last Location :  <strong>Indomaret Fresh Gejayan</strong></p>
+              <p>Nickname : <strong>Chopa</strong></p>
+              <p>Gender : <strong>Male</strong></p>
+              <p>Last Location :  <strong>Komplek Amarilis</strong></p>
             </div>
         </div>
     </div>
@@ -160,14 +196,15 @@
     <div class="btn-foundpet">
         <button type="button" class="btn-foundp">See More</button>
     </div>
+      
       <!-- ==== CARD ENDS ==== -->
       <!-- ==== Artikel Start ==== -->
 
         <section class="Artikel" id="Artikel">
             <div class="row">
                 <div class="articel">
-                <h3>9 Manfaat Memelihara Hewan untuk Kesehatan Mental dan Perkembangan Anak</h3>
-                <a href="#" class="ctn">Read More</a>
+                 <h3>9 Manfaat Memelihara Hewan untuk Kesehatan Mental dan Perkembangan Anak</h3>
+                 <a href="#" class="ctn">Read More</a>
                 </div>
 
                 <div class="img">
@@ -180,42 +217,44 @@
                 </div>
             </div>
         </section>
-        
-       <!-- ==== Artikel Ends ==== -->
-       <!-- ==== Artikel bawah Start ==== -->
 
-        <div class="judul">
-            <div class="user-stories">
-                <h3>Articles</h3>
+    <!-- ==== Artikel Ends ==== -->
+    
+    <!-- ==== Artikel bawah Start ==== -->
+
+    <div class="judul">
+        <div class="user-stories">
+            <h3>Articles</h3>
+        </div>
+    </div>
+
+    <div class="cardb-container">
+        <div class="cardb" style="width: 350px;">
+            <img src="photo/card.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>Krisis biaya hidup: kenapa makin banyak warga melepas hewan peliharaan?</strong></p>
             </div>
         </div>
 
-        <div class="cardb-container">
-            <div class="cardb" style="width: 350px;">
-                <img src="photo/cardb.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p><strong>Ini Sederet Alasan Kucing Menjadi Hewan Peliharaan Terbaik</strong></p>
-                </div>
-            </div>
-
-            <div class="cardb" style="width: 350px;">
-                <img src="photo/cardb2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p><strong>100 Rekomendasi Nama Kucing Jantan untuk Hewan Peliharaan-Mu!</strong></p>
-                </div>
-            </div>
-
-            <div class="cardb" style="width: 350px;">
-                <img src="photo/cardb3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p><strong>9 Cara Merawat Anjing agar Tetap Sehat dan Ceria</strong></p>
-                </div>
+        <div class="cardb" style="width: 350px;">
+            <img src="photo/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>5 Tips Mudah untuk Bepergian Bersama Hewan Peliharaan</strong></p>
             </div>
         </div>
 
-        <!-- ==== Artikel bawah Ends ==== -->
-     
-       
+        <div class="cardb" style="width: 350px;">
+            <img src="photo/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>Seberapa Sering Hewan Peliharaan Perlu Mengunjungi Dokter Hewan?</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Artikel bawah Ends ==== -->
+
+
+
 
      <!-- ==== footer ==== -->
      <section class="footer" id="footer">

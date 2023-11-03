@@ -76,26 +76,10 @@ header .icons i{
     margin-left: 1.5rem;
 }
 
-header .icons .signup{
-    padding: 8px 15px;
-    background: #F2F7FF;
-    border-radius: 30px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-left: 15px;
-    font-family: Inter;
-    margin-bottom: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 header .icons i:hover{
     color: #FDBE34;
 }
 
-header .icons .signup:hover{
-    background-color: rgba(253, 190, 52, 0.80);
-}
 /* -------------ICONS------------ */
 
 header #toggler{
@@ -110,6 +94,69 @@ header .bi-list{
     cursor: pointer;
     display: none;
 }
+
+
+.icons .sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0;
+}
+
+.sub-menu-wrap.open-class {
+    max-height: 400px;
+}
+
+header .icons .sub-menu {
+    background: #ffffff;
+    top: 8px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.bi-person-fill, .bi-box-arrow-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 5px;
+    width: 40px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.bi-person-fill p, .bi-box-arrow-right p {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.bi-person-fill:hover p, .bi-box-arrow-right:hover p {
+    color: #FDBE34;
+}
+
+.bi-person-fill span, .bi-box-arrow-right span {
+    font-size: 22px; /* Perbaikan dari "font" menjadi "font-size" */
+    transition: transform 0.3s;
+}
+
+.bi-person-fill:hover span, .bi-box-arrow-right:hover span {
+    transform: translateX(5px); /* Perbaikan dari "transform: translate(5px);" */
+}
+
+
 
 /* -------------HALAMAN HOME------------ */
 
@@ -145,7 +192,6 @@ header .bi-list{
     line-height: 23px;
     margin-left: 5%;
 }
-
 /* -------------BUTTON I LOST N I FOUND DI HOME------------ */
 
 
@@ -266,7 +312,41 @@ header .bi-list{
     text-align: left;
     justify-content: center;
     margin-bottom: 7%;
+    position: relative;
 }
+
+.card .overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.80);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.card:hover .overlay{opacity: 1;}
+
+.card .overlay .Obtn{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #F2F7FF;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.card .overlay .Obtn:hover{
+    color: #FDBE34;
+}
+
 
 .card img {
     max-width: 100%;
@@ -284,6 +364,54 @@ header .bi-list{
     font-size: 12px;
     font-family: Inter;
 }
+
+/*-------------POP UP-------------*/
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #F2F7FF;
+    width: 85%;
+    height: 700px;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}     
+
+
 /*------------CARD------------- */
 
 /*------------ARTIKEL------------- */
@@ -374,7 +502,6 @@ header .bi-list{
 .story-container .stories p{
     font-size: 13px;   
 }
-
 /*------------USER STORY------------- */
 
 

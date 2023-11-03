@@ -8,7 +8,7 @@
 
     <!-- ==== CSS ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/afterlog.css">
  
 </head>
 <body>
@@ -21,21 +21,60 @@
         <a href="index.html" class="logo">PetsFound<span>.</span></a>
         <nav class="navbar">
             <a href="#">Home</a>
-            <a href="found.html">Found a Pet</a>
-            <a href="lost.html">Lost a Pet</a>
-            <a href="about.html">About</a>
+            <a href="found2.html">Found a Pet</a>
+            <a href="lost2.html">Lost a Pet</a>
+            <a href="about2.html">About</a>
         </nav>
 
-        <div class="icons">
 
-          <a href="login.html">
-          <button type="button" class="signup">Log In</button>
-          </a>
-        
-          <a href="search.html">
-          <i class="bi bi-search"></i>
-          </a>
+
+        <div class="icons">
+            <i class="bi bi-person-circle" onclick="togglemenu()"></i>
+            <a href="search2.html">
+                <i class="bi bi-search"></i>
+            </a>
+
+            <div class="sub-menu-wrap" id="sub-menu-wrap">
+                <div class="sub-menu">
+                    <a href="profile.html" class="bi bi-person-fill">
+                        <p>Profile</p>
+                        <span></span>
+                    </a>
+                    <hr>
+                    <a href="index.html" class="bi bi-box-arrow-right">
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <script>
+            let submenu = document.getElementById("sub-menu-wrap");
+            let personCircleIcon = document.querySelector(".bi-person-circle");
+        
+            // Fungsi untuk menampilkan sub-menu
+            function showMenu() {
+                submenu.classList.add("open-class");
+            }
+        
+            // Fungsi untuk menutup sub-menu
+            function hideMenu() {
+                submenu.classList.remove("open-class");
+            }
+        
+            // Fungsi event listener untuk menutup sub-menu saat mengklik di luar sub-menu
+            function clickOutside(event) {
+                if (!submenu.contains(event.target) && event.target !== personCircleIcon) {
+                    hideMenu();
+                }
+            }
+        
+            personCircleIcon.addEventListener("click", showMenu);
+            document.addEventListener("click", clickOutside);
+        </script>
+
+        
     </header>
     <!-- ==== header section ends ==== -->
 
@@ -50,8 +89,8 @@
             </div>   
             
             <div class="button-container">
-                <a href="login.html" class="button">I LOST A PET</a>
-                <a href="login.html" class="button">I FOUND A PET</a>
+                <a href="reportlost.html" class="button">I LOST A PET</a>
+                <a href="reportfound.html" class="button">I FOUND A PET</a>
             </div>
     </section> 
     <!-- ==== home section ends ==== -->
@@ -87,12 +126,16 @@
 
     <!-- ==== CARD START ==== -->
     <div class="card-container">
+
       <div class="card">
         <img src="photo/meow3.jpg" alt="Gambar 1">
         <div class="card-content">
             <p>Nickname : <strong>Unknown</strong></p>
             <p>Gender : <strong>Female</strong></p>
             <p>Last Location :  <strong>Warmindo Gejos Cafe</strong></p>
+        </div>
+        <div class="overlay">
+            <a href="#" class="Obtn">View Profile</a>
         </div>
       </div>
 
@@ -103,6 +146,9 @@
             <p>Gender : <strong>Male</strong></p>
             <p>Last Location :  <strong>Angkringan Lik Man</strong></p>
           </div>
+          <div class="overlay">
+            <a href="#" class="Obtn">View Profile</a>
+          </div>
       </div>
 
       <div class="card">
@@ -112,8 +158,14 @@
             <p>Gender : <strong>Female</strong></p>
             <p>Last Location :  <strong>Ruko depan UNCEN</strong></p>
           </div>
+          <div class="overlay">
+            <a href="#" class="Obtn">View Profile</a>
+          </div>
       </div>
+      
     </div>
+
+    <!--POP UP-->
 
     <!-- ==== CARD ENDS ==== -->
 

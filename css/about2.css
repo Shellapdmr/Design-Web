@@ -111,6 +111,66 @@ header .bi-list{
     display: none;
 }
 
+.icons .sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0;
+}
+
+.sub-menu-wrap.open-class {
+    max-height: 400px;
+}
+
+header .icons .sub-menu {
+    background: #ffffff;
+    top: 8px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.bi-person-fill, .bi-box-arrow-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 5px;
+    width: 40px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.bi-person-fill p, .bi-box-arrow-right p {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.bi-person-fill:hover p, .bi-box-arrow-right:hover p {
+    color: #FDBE34;
+}
+
+.bi-person-fill span, .bi-box-arrow-right span {
+    font-size: 22px; /* Perbaikan dari "font" menjadi "font-size" */
+    transition: transform 0.3s;
+}
+
+.bi-person-fill:hover span, .bi-box-arrow-right:hover span {
+    transform: translateX(5px); /* Perbaikan dari "transform: translate(5px);" */
+}
+
 /* -------------HALAMAN HOME------------ */
 
 .Home{
@@ -267,7 +327,6 @@ header .bi-list{
 .story-container3 .stories3 p{
     font-size: 13px;   
 }
-
 /*------------USER STORY------------- */
 
 
