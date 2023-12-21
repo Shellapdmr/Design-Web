@@ -118,12 +118,11 @@ header .bi-list{
     line-height: normal;
     margin: 0;
     margin-bottom: 5%;
-    margin-left: 1.5%;
 }
 
 .Home .isian .table-container{
     width: 300px;
-    margin-left: 24.5%;
+    margin-left: 26%;
     display: flex;
     text-align: left;
     justify-content: center;
@@ -141,7 +140,6 @@ header .bi-list{
 .Home .isian .table-container .textbox3{
     margin-right: 15%;
 }
-
 
 .Home .isian .textbox h1{
 
@@ -163,9 +161,8 @@ header .bi-list{
 }
 
 .Home .isian .textbox4 h1{
-
     font-size: 14px;
-    margin-left: 2%;
+    margin-left: 2%
 }
 
 
@@ -184,11 +181,10 @@ input[type="text"] {
     border-radius: 5px;
     background: rgba(253, 190, 52, 0.50);
     padding: 5px; /* Padding untuk memberikan ruang di dalam input */
-    width: 950px;
+    width: 900px;
     height: 30px;
     flex-shrink: 0;
     border-radius: 5px;
-    margin-left: 1.5%;
 }
 
 /* -------------BUTTON LOST------------ */
